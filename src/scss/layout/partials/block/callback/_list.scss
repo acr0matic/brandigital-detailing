@@ -1,0 +1,11 @@
+.callback-list {
+  &__item {
+    & > * {
+      font-size: $font-size__text--big;
+    }
+
+    &--small > * {
+      font-size: $font-size__text--small;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.button-primary {
+  background-color: rgba($color: $palette-white, $alpha: 0.15);
+  backdrop-filter: blur(10px);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgba($color: $palette-white, $alpha: 0.3);
+    }
+  }
+}

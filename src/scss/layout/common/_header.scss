@@ -7,5 +7,24 @@
 }
 
 .header {
+  position: fixed;
+  z-index: $z-index-header;
+  top: 0;
+  left: 0;
 
+  width: 100%;
+  padding: 24px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 60px;
+  }
+
+  &__callback {
+    margin-left: auto;
+  }
 }

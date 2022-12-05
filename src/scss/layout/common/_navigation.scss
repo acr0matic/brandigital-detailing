@@ -4,11 +4,24 @@
 
 .nav {
   &__list {
+    display: flex;
   }
 
   &__item {
   }
 
   &__link {
+    padding: 5px 0;
+    font-size: $font-size__text--big;
+
+    text-transform: uppercase;
+  }
+
+  &--header {
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
   }
 }

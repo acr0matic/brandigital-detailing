@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  @include breakpoint($breakpoint-laptop--medium) {
+    background-size: 1280px;
+  }
+
+  position: relative;
+  height: 100vh;
+  max-height: 800px;
+
+  background-color: $palette-black;
+  background-image: url("../img/layout/page/index/hero/background.jpg");
+  background-position: center center;
+  background-size: 1440px;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 390px;
+
+    background-image: linear-gradient(180deg, #010101 0%, #2c2b2e 100%);
+  }
+
+  .container,
+  .hero {
+    height: 100%;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: 96px;
+    }
+
+    padding-top: 110px;
+
+    color: transparent;
+    font-weight: $weight-Black;
+    font-size: $font-size__title--large;
+
+    -webkit-text-stroke: 1px #ffffff;
+  }
+
+  &__button {
+    margin: auto auto 80px;
+  }
+}

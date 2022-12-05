@@ -62,13 +62,72 @@
 
 <body>
   <!-- Шапка -->
-  <header id="header">
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="">
+            <img class="logo logo--header" src="img/logo.svg" alt="">
+          </a>
+        </div>
+        <!-- /.header__logo -->
 
+        <div class="header__nav">
+          <nav class="nav nav--header">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="">Портфолио</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="">Услуги</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="">О нас</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.nav -->
+        </div>
+        <!-- /.header__nav -->
+
+        <div class="header__callback">
+          <div class="callback-list">
+            <div class="callback-list__item">
+              <a href="tel:">
+                +7 888 888 88 88
+              </a>
+            </div>
+            <!-- /.callback-list__item -->
+
+            <div class="callback-list__item callback-list__item--small">
+              <a href="mailto:">
+                B&D detailing@mail.com
+              </a>
+            </div>
+            <!-- /.callback-list__item -->
+          </div>
+          <!-- /.callback-list -->
+        </div>
+        <!-- /.header__callback -->
+      </div>
+      <!-- /.header__wrapper -->
+    </div>
+    <!-- /.container -->
   </header>
 
   <!-- Основной контент -->
   <main>
-    <section>
+    <section id="hero" class="section">
+      <div class="container">
+        <div class="hero">
+          <h1 class="hero__title">ДЕТЕЙЛИНГ</h1>
+          <button class="hero__button button button-primary">Заказать услугу</button>
+        </div>
+        <!-- /.hero -->
+      </div>
+      <!-- /.container -->
     </section>
   </main>
 
