@@ -16,6 +16,16 @@
 
   transition: all $transition ease;
 
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgba($color: $palette-white, $alpha: 0.3);
+    }
+  }
+
+  &:active {
+    background-color: rgba($color: #7d7d7d, $alpha: 0.3);
+  }
+
   &:disabled {
     opacity: 0.5;
     pointer-events: none;

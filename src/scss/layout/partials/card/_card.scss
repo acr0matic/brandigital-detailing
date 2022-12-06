@@ -9,5 +9,17 @@
 
     font-weight: $weight-Regular;
     font-size: $font-size__text--regular;
+
+    span {
+      &::before {
+        content: "\25CF";
+        vertical-align: middle;
+
+        margin-right: 8px;
+        margin-left: 5px;
+
+        font-size: 6px;
+      }
+    }
   }
 }
