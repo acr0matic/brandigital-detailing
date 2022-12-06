@@ -1,0 +1,13 @@
+.card-promotion {
+  .card__picture {
+    height: 230px;
+  }
+
+  .card__text {
+    display: -webkit-box;
+    overflow: hidden;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+}

@@ -1,0 +1,13 @@
+.card {
+  &__content {
+    padding: 24px 0 24px 16px;
+    border-left: 1px solid $palette-white;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+
+    font-weight: $weight-Regular;
+    font-size: $font-size__text--regular;
+  }
+}

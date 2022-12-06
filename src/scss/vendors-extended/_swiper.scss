@@ -1,0 +1,64 @@
+/* purgecss start ignore */
+
+.swiper {
+  &-wrapper {
+    box-sizing: border-box;
+  }
+
+  &-slide {
+    height: initial;
+  }
+
+  &-button {
+    &-prev,
+    &-next {
+      @include breakpoint($breakpoint-laptop--medium) {
+        width: 54px;
+        height: 54px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        border-width: 2px;
+      }
+
+      width: 65px;
+      height: 65px;
+
+      border-radius: 100px;
+
+      transition: $transition ease;
+
+      @media (hover: hover) {
+        &:hover {
+          border-color: #6d8e5e;
+        }
+      }
+    }
+
+    &-prev {
+      left: -75px;
+    }
+
+    &-next {
+      right: -75px;
+    }
+  }
+
+  &-scrollbar {
+    border-radius: 0;
+    background-color: #434245;
+  }
+
+  &-scrollbar-horizontal {
+    position: static !important;
+    height: 6px !important;
+    margin-top: 40px;
+  }
+
+  &-scrollbar-drag {
+    border-radius: 30px;
+    background-color: #565557;
+  }
+}
+
+/* purgecss end ignore */

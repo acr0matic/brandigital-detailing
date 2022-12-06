@@ -1,9 +1,20 @@
 .section {
-  &__header {
+  &:not(:first-child) {
+    padding-top: 150px;
+  }
 
+  &__header {
+    margin-bottom: 40px;
   }
 
   &__title {
+    margin-bottom: 15px;
 
+    font-weight: $weight-Regular;
+    font-size: $font-size__title--small;
+  }
+
+  &__description {
+    font-size: $font-size__text--big;
   }
 }
