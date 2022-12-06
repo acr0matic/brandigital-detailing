@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
 }
 
 .header {
@@ -14,6 +13,17 @@
 
   width: 100%;
   padding: 24px 0;
+
+  transition: $transition ease;
+
+  &--hidden {
+    top: -100%;
+  }
+
+  &--background {
+    background-color: $palette-gray;
+    box-shadow: 0 3px 1px rgba(#000000, 0.028), 0 1px 4px rgba(#000000, 0.042);
+  }
 
   &__wrapper {
     display: flex;
