@@ -1,6 +1,14 @@
 /* purgecss start ignore */
 
 .swiper {
+  &--bootstrap-sm {
+    @include breakpoint($breakpoint-tablet) {
+      .swiper-wrapper {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
   &-wrapper {
     box-sizing: border-box;
   }

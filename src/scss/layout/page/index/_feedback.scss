@@ -1,0 +1,35 @@
+#feedback {
+}
+
+.feedback {
+  &__rating {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 24px;
+
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  &__video {
+    display: flex;
+    align-items: center;
+
+    margin-left: 12px;
+
+    font-size: $font-size__text--small;
+
+    img {
+      margin-left: 8px;
+    }
+  }
+
+  &__action {
+    margin-top: 40px;
+    text-align: center;
+  }
+}

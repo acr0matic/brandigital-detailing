@@ -1,0 +1,10 @@
+#service {
+  overflow: hidden;
+}
+
+.service {
+  &__action {
+    margin-top: 40px;
+    text-align: center;
+  }
+}

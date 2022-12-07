@@ -1,7 +1,7 @@
 .button {
   display: inline-flex;
 
-  padding: 20px 70px;
+  padding: 15px 70px;
   border: 1px solid $palette-white;
   border-radius: 500px;
   outline: none;
@@ -9,7 +9,7 @@
   background-color: transparent;
   color: $color-text__white;
 
-  font-size: $font-size__text--large;
+  font-size: $font-size__text--regular;
 
   white-space: nowrap;
   cursor: pointer;

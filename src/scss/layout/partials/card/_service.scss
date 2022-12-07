@@ -1,0 +1,9 @@
+.card-service {
+  .card__picture {
+    height: 330px;
+  }
+
+  .card__text {
+    -webkit-line-clamp: 4;
+  }
+}

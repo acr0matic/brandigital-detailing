@@ -1,0 +1,10 @@
+.card-feedback {
+  .card__title {
+    text-transform: uppercase;
+  }
+
+  .card__text {
+    margin-bottom: 20px;
+    -webkit-line-clamp: 8;
+  }
+}

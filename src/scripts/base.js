@@ -1,7 +1,7 @@
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 const isMobile = window.matchMedia('(max-width: 576px)').matches;
-const isTablet = window.matchMedia('(max-width: 991px)').matches;
+const isSmallTablet = window.matchMedia('(max-width: 768px)').matches;
 
 const modalParams = {
   awaitCloseAnimation: true,
@@ -17,7 +17,7 @@ const scrollParams = {
 
 let currentModal = null;
 
-if (isTablet) scrollParams.offset = -30;
+if (isSmallTablet) scrollParams.offset = -30;
 if (isMobile) scrollParams.offset = -15;
 
 const StyleСlass = {

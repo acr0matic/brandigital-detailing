@@ -1,7 +1,22 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   &__content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
     padding: 24px 0 24px 16px;
     border-left: 1px solid $palette-white;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+
+    margin-top: auto;
   }
 
   &__title {
@@ -21,5 +36,11 @@
         font-size: 6px;
       }
     }
+  }
+
+  &__text {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
   }
 }

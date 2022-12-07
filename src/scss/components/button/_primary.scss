@@ -1,4 +1,8 @@
 .button-primary {
+  padding: 20px 70px;
+
   background-color: rgba($color: $palette-white, $alpha: 0.15);
+  font-size: $font-size__text--large;
+
   backdrop-filter: blur(10px);
 }

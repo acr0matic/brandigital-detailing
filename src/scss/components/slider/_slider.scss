@@ -1,3 +1,9 @@
 .slider {
+  @include breakpoint($breakpoint-tablet) {
+    .swiper {
+      overflow: visible;
+    }
+  }
+
   position: relative;
 }
