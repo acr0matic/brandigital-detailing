@@ -1,0 +1,18 @@
+#about {
+}
+
+.about {
+  .row:first-child {
+    .about__slider {
+      .swiper-control {
+        & > div {
+          top: 80%;
+        }
+      }
+    }
+  }
+
+  .row:last-child {
+    margin-top: -20%;
+  }
+}

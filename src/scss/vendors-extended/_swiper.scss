@@ -17,38 +17,128 @@
     height: initial;
   }
 
-  &-button {
-    &-prev,
-    &-next {
-      @include breakpoint($breakpoint-laptop--medium) {
-        width: 54px;
-        height: 54px;
-      }
+  &-control {
+    &--arrow {
+      .swiper-button {
+        &-prev,
+        &-next {
+          @include breakpoint($breakpoint-laptop--medium) {
+            width: 54px;
+            height: 54px;
+          }
 
-      @include breakpoint($breakpoint-tablet--large) {
-        border-width: 2px;
-      }
+          @include breakpoint($breakpoint-tablet--large) {
+            border-width: 2px;
+          }
 
-      width: 65px;
-      height: 65px;
+          width: 65px;
+          height: 65px;
 
-      border-radius: 100px;
+          border-radius: 100px;
 
-      transition: $transition ease;
+          transition: $transition ease;
 
-      @media (hover: hover) {
-        &:hover {
-          border-color: #6d8e5e;
+          @media (hover: hover) {
+            &:hover {
+              border-color: #6d8e5e;
+            }
+          }
+
+          &::after {
+            width: 24px;
+            height: 50px;
+          }
+        }
+
+        &-prev {
+          left: -75px;
+        }
+
+        &-next {
+          right: -75px;
         }
       }
     }
 
+    &--circle {
+      .swiper-button {
+        &-prev,
+        &-next {
+          @include breakpoint($breakpoint-laptop--medium) {
+            width: 54px;
+            height: 54px;
+          }
+
+          @include breakpoint($breakpoint-tablet--large) {
+            border-width: 2px;
+          }
+
+          width: 50px;
+          height: 50px;
+
+          border: 1px solid $palette-white;
+          background-color: $palette-gray;
+
+          @media (hover: hover) {
+            &:hover {
+              background-color: #79797a;
+            }
+          }
+
+          &:active {
+            background-color: #525253;
+          }
+
+          &::after {
+            width: 8px;
+            height: 18px;
+          }
+        }
+
+        &-prev {
+          left: -25px;
+        }
+
+        &-next {
+          right: -25px;
+        }
+
+        &-disabled {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &-button {
+    &-prev,
+    &-next {
+      border-radius: 100px;
+
+      transition: $transition ease;
+
+      &::after {
+        content: "";
+        display: block;
+
+        width: 64px;
+        height: 24px;
+
+        background-position: center center;
+        background-size: 100% 100%;
+      }
+    }
+
     &-prev {
-      left: -75px;
+      &::after {
+        background-image: url("../img/icons/control/slider_prev.svg");
+      }
     }
 
     &-next {
-      right: -75px;
+      &::after {
+        background-image: url("../img/icons/control/slider_next.svg");
+      }
     }
   }
 

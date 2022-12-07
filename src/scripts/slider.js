@@ -14,6 +14,30 @@ const promotion = new Swiper('.slider-promotion', {
   },
 });
 
+const aboutSlider = new Swiper('.slider-about', {
+  slidesPerView: 1,
+  speed: 300,
+  spaceBetween: 24,
+  simulateTouch: false,
+
+  navigation: {
+    nextEl: '.about__slider .swiper-button-next',
+    prevEl: '.about__slider .swiper-button-prev',
+  },
+});
+
+const aboutGallery = new Swiper('.slider-gallery', {
+  slidesPerView: 1,
+  speed: 300,
+  spaceBetween: 24,
+  simulateTouch: false,
+
+  navigation: {
+    nextEl: '.about__gallery .swiper-button-next',
+    prevEl: '.about__gallery .swiper-button-prev',
+  },
+});
+
 if (isSmallTablet) {
   const service = new Swiper('.slider-service', {
     slidesPerView: 1.6,
