@@ -3,6 +3,24 @@
   flex-direction: column;
   height: 100%;
 
+  @media (hover: hover) {
+    &:hover {
+      .button {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .card__picture img {
+        filter: blur(35px);
+      }
+    }
+  }
+
+  &__picture {
+    overflow: hidden;
+    transition: $transition ease;
+  }
+
   &__content {
     display: flex;
     flex-grow: 1;
@@ -10,6 +28,21 @@
 
     padding: 24px 0 24px 16px;
     border-left: 1px solid $palette-white;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translate(-50%, -50%);
   }
 
   &__footer {

@@ -64,7 +64,7 @@ class Form {
       e.preventDefault();
 
       if (this.CheckRequired() & this.InputValidate()) {
-        this.submit.innerHTML = this.submit.getAttribute('data-sending');
+        this.submit.innerHTML = this.submit.getAttribute('data-sending') || 'Отправка...';
         this.submit.setAttribute('disabled', 'disabled');
         this.form.classList.add('form--sending');
 

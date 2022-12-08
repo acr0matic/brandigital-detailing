@@ -1,4 +1,6 @@
 .input {
+  position: relative;
+
   &[type="number"] {
     appearance: textfield;
 
@@ -8,49 +10,49 @@
     }
   }
 
-  position: relative;
-
   &--error {
     .input__field {
-      border-color: #e64747;
+      border-color: #ff233d;
     }
 
     .input__warning {
+      margin-top: 8px;
+
       opacity: 1;
       visibility: visible;
     }
   }
 
   &__field {
+    position: relative;
+    z-index: 2;
     width: 100%;
-    padding: 20px 25px;
+    padding: 15px 25px 15px 0;
 
-    border: 1px solid $palette-black;
+    border: none;
+    border-bottom: 1px solid $palette-white;
     outline: none;
 
-    background-color: transparent;
-    color: $color-text__black;
+    background-color: $palette-gray;
+    color: $color-text__white;
 
     font-size: $font-size__text--regular;
 
     &::placeholder {
-      color: #353535;
+      color: #9c9c9c;
     }
   }
 
   &__warning {
-    position: absolute;
-    top: 50%;
-    right: 15px;
+    display: block;
 
-    width: 24px;
-    height: 24px;
+    margin-top: -18px;
+
+    color: #ff233d;
+    font-size: $font-size__text--small;
 
     opacity: 0;
     visibility: hidden;
-
-    cursor: help;
-    transform: translateY(-50%);
 
     transition: 0.2s ease;
   }
