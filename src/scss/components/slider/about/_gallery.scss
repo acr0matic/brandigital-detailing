@@ -1,5 +1,9 @@
 .slider-gallery {
   &__picture {
+    @include breakpoint($breakpoint-laptop) {
+      height: 450px;
+    }
+
     height: 520px;
   }
 }

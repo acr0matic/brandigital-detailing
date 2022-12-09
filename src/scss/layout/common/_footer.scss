@@ -3,6 +3,10 @@
 // -----------------------------------------------------------------------------
 
 #footer {
+  @include breakpoint($breakpoint-laptop) {
+    margin-top: 120px;
+  }
+
   margin-top: 160px;
 }
 

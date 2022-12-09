@@ -1,5 +1,9 @@
 .card-service {
   .card__picture {
+    @include breakpoint($breakpoint-laptop) {
+      height: 210px;
+    }
+
     height: 330px;
   }
 

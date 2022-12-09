@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
 
+    margin-right: 12px;
+
     img {
       width: 24px;
 
@@ -19,7 +21,7 @@
     display: flex;
     align-items: center;
 
-    margin-left: 12px;
+    margin-left: auto;
 
     font-size: $font-size__text--small;
 

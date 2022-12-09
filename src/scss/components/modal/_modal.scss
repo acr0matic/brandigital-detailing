@@ -39,6 +39,11 @@ $transition-time: 0.2s;
     text-transform: uppercase;
   }
 
+  &__text {
+    color: $color-text__gray;
+    font-size: $font-size__text--big;
+  }
+
   &__close {
     position: absolute;
     z-index: 3;

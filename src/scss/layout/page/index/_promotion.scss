@@ -4,5 +4,11 @@
 }
 
 .promotion {
+  .slider {
+    @include breakpoint(max-width 1280px) {
+      width: 90%;
+    }
 
+    margin: 0 auto;
+  }
 }

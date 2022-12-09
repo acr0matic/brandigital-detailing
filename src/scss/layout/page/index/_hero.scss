@@ -7,6 +7,10 @@
     background-size: 1280px;
   }
 
+  @include breakpoint($breakpoint-laptop) {
+    background-size: 1140px;
+  }
+
   position: relative;
   height: 100vh;
   max-height: 800px;
