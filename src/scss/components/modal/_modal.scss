@@ -13,13 +13,16 @@ $transition-time: 0.2s;
     align-items: center;
     justify-content: center;
 
+    overflow: auto;
+
     background: rgba(#000000, 0.7);
   }
 
   &__container {
     position: relative;
+    overflow: auto;
 
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
 
     border-radius: 40px;

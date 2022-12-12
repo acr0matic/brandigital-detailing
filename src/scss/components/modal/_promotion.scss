@@ -1,0 +1,41 @@
+.modal-promotion {
+  .modal__overlay {
+    align-items: flex-start;
+  }
+
+  .modal__container {
+    max-width: 900px;
+    margin-top: 10vh;
+    margin-bottom: 24px;
+    padding: 12px 80px 54px;
+  }
+
+  .modal__picture {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .modal__title {
+    padding-bottom: 12px;
+    border-bottom: 2px solid #a0a0a0;
+    font-size: $font-size__text--big;
+  }
+
+  .modal__subtitle {
+    margin-top: 8px;
+    font-size: $font-size__text--big;
+
+    span {
+      text-decoration: line-through;
+    }
+  }
+
+  .modal__text {
+    margin-top: 24px;
+  }
+
+  .modal__action {
+    margin-top: 32px;
+    text-align: center;
+  }
+}

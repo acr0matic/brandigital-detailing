@@ -6,6 +6,7 @@ const isSmallTablet = window.matchMedia('(max-width: 768px)').matches;
 const modalParams = {
   awaitCloseAnimation: true,
   disableFocus: true,
+  disableScroll: true,
 }
 
 const scrollParams = {

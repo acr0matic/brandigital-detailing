@@ -155,7 +155,7 @@
                         <img class="preloader" src="img/misc/preloader.svg" alt="">
                       </picture>
 
-                      <button class="card__button button button-outline">Смотреть подробнее</button>
+                      <button data-micromodal-trigger="modal-promotion" class="card__button button button-outline">Смотреть подробнее</button>
                     </div>
                     <!-- /.card__wrapper -->
 
@@ -180,7 +180,7 @@
                         <img class="preloader" src="img/misc/preloader.svg" alt="">
                       </picture>
 
-                      <button class="card__button button button-outline">Смотреть подробнее</button>
+                      <button data-micromodal-trigger="modal-promotion" class="card__button button button-outline">Смотреть подробнее</button>
                     </div>
                     <!-- /.card__wrapper -->
 
@@ -205,7 +205,7 @@
                         <img class="preloader" src="img/misc/preloader.svg" alt="">
                       </picture>
 
-                      <button class="card__button button button-outline">Смотреть подробнее</button>
+                      <button data-micromodal-trigger="modal-promotion" class="card__button button button-outline">Смотреть подробнее</button>
                     </div>
                     <!-- /.card__wrapper -->
 
@@ -827,6 +827,48 @@
     </div>
     <!-- /.container -->
   </footer>
+
+  <div class="modal modal-promotion micromodal-slide" id="modal-promotion" aria-hidden="true">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container" role="dialog">
+        <div class="modal__header text-center">
+          <svg class="modal__close" data-micromodal-close width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path data-micromodal-close d="M1 1L21 21" stroke="white" />
+            <path data-micromodal-close d="M21 1L1 21" stroke="white" />
+          </svg>
+        </div>
+
+        <div class="modal__content">
+          <picture class="modal__picture lazy">
+            <img data-src="https://picsum.photos/700?random=9" class="image image--cover lazy__item" alt="">
+            <img class="preloader" src="img/misc/preloader.svg" alt="">
+          </picture>
+
+          <h3 class="modal__title">НАЗВАНИЕ АКЦИИ</h3>
+          <div class="modal__subtitle"><span>2000 р</span> / 1500 р</div>
+
+          <div data-editor="default" class="modal__text">
+            <ul>
+              <li>Описание акции</li>
+              <li>Описание акции</li>
+              <li>Описание акции</li>
+            </ul>
+            <br>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали города напоивший они текст дал вопрос свой рыбными лучше, она рыбного пояс алфавит путь маленькая сбить, рот рукопись. Ему ее жизни сбить это напоивший. Запятых мир реторический себя приставка?</p>
+            <br>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали города напоивший они текст дал вопрос свой рыбными лучше, она рыбного пояс алфавит путь маленькая сбить, рот рукопись. Ему ее жизни сбить это напоивший. Запятых мир реторический себя приставка?</p>
+          </div>
+          <!-- /.modal__text -->
+
+          <div class="modal__action">
+            <button class="button button-outline">Заказать услугу</button>
+          </div>
+          <!-- /.modal__action -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
 
   <div class="modal modal-callback micromodal-slide" id="modal-callback" aria-hidden="true">
     <div class="modal__overlay" data-micromodal-close>
