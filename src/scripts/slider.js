@@ -55,3 +55,37 @@ if (isSmallTablet) {
     },
   });
 }
+
+const porfolioThumb = new Swiper('.slider-portfolio-thumb', {
+  slidesPerView: 3,
+  speed: 300,
+  spaceBetween: 16,
+  allowTouchMove: false,
+  // simulateTouch: false,
+
+  navigation: {
+    nextEl: '.modal-portfolio .swiper-button-next',
+    prevEl: '.modal-portfolio .swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.slider-portfolio-thumb .swiper-scrollbar',
+  },
+});
+
+const porfolioGallery = new Swiper('.slider-portfolio-gallery', {
+  slidesPerView: 1,
+  speed: 300,
+  spaceBetween: 24,
+  simulateTouch: false,
+  slideToClickedSlide: true,
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+  thumbs: {
+    swiper: porfolioThumb
+  }
+});
