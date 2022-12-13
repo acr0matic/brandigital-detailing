@@ -27,6 +27,15 @@
 
     img {
       margin-left: 8px;
+      transition: $transition ease;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        img {
+          transform: scale(0.85);
+        }
+      }
     }
   }
 

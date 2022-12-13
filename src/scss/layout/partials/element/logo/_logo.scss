@@ -1,12 +1,14 @@
 .logo {
   transition: $transition ease;
 
-  @media (hover: hover) {
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-
   &--header {
+    @media (hover: hover) {
+      &:hover {
+        .background {
+          fill: #000000;
+          stroke: #000000;
+        }
+      }
+    }
   }
 }
