@@ -12,6 +12,10 @@ $transition-time: 0.2s;
       margin-bottom: 24px;
       padding: 12px 80px 54px;
     }
+
+    .modal__title {
+      font-size: $font-size__text--big;
+    }
   }
 
   &__overlay {
@@ -38,7 +42,7 @@ $transition-time: 0.2s;
     width: 95%;
     max-width: 1200px;
 
-    border-radius: 40px;
+    border-radius: 15px;
 
     background-color: $palette-gray;
     box-shadow: 0 0 60px rgba($palette-black, 0.6);
