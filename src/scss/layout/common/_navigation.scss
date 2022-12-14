@@ -24,4 +24,19 @@
       }
     }
   }
+
+  &--mobile {
+    .nav__list {
+      flex-direction: column;
+      align-items: flex-end;
+
+      text-align: right;
+    }
+
+    .nav__item {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+  }
 }

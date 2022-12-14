@@ -1,11 +1,27 @@
 .callback-list {
+  text-align: right;
+
   &__item {
     & > * {
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--regular;
+      }
+
       font-size: $font-size__text--big;
     }
 
-    &--small > * {
-      font-size: $font-size__text--small;
+    &--small {
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-top: -2px;
+      }
+
+      & > * {
+        @include breakpoint($breakpoint-mobile--large) {
+          font-size: $font-size__text--small - 2px;
+        }
+
+        font-size: $font-size__text--small;
+      }
     }
   }
 }

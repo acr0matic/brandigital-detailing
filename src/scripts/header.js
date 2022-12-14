@@ -1,6 +1,17 @@
 const header = document.getElementById('header');
 
 if (header) {
+  function SetHeight(target) {
+    const height = target.offsetHeight;
+    document.documentElement.style.setProperty('--height', height + 'px');
+  }
+
+  function CheckHeader() {
+    isReach = window.scrollY > 0;
+
+    if (isReach || isOpen) header.classList.add(StyleСlass.header.background);
+    else header.classList.remove(StyleСlass.header.background);
+  }
 
   let isReach = false;
   let isOpen = false;
@@ -8,35 +19,28 @@ if (header) {
   SetHeight(header);
   window.addEventListener('resize', () => SetHeight(header));
 
-  function SetHeight(target) {
-    const height = target.offsetHeight;
-    document.documentElement.style.setProperty('--height', height + 'px');
-  }
+  CheckHeader();
+  window.addEventListener('scroll', () => CheckHeader());
 
-  window.addEventListener('scroll', () => {
-    isReach = window.scrollY > 0;
 
-    if (isReach || isOpen) header.classList.add(StyleСlass.header.background);
-    else header.classList.remove(StyleСlass.header.background);
+
+  const mobile = document.querySelector('.mobile-menu');
+  const mobileOverlay = document.querySelector('.mobile-menu');
+  const mobileNav = mobile.querySelectorAll('.nav__link');
+
+  const headerBurger = header.querySelector('.hamburger');
+  const mobileBurger = mobile.querySelector('.hamburger');
+
+  headerBurger.addEventListener('click', () => Menu());
+  mobileBurger.addEventListener('click', () => Menu());
+  mobileOverlay.addEventListener('click', () => Menu());
+
+  mobileNav.forEach(link => {
+    link.addEventListener('click', () => Menu());
   });
 
-
-  // const mobile = document.querySelector('#mobile-menu');
-  // const mobileNav = mobile.querySelectorAll('.nav__link');
-  // const burger = header.querySelector('.header__action .hamburger');
-
-  // burger.addEventListener('click', () => Menu());
-
-  // mobileNav.forEach(link => {
-  //   link.addEventListener('click', () => Menu());
-  // });
-
-  // function Menu() {
-  //   isOpen = !isOpen;
-
-  //   if (!isReach) header.classList.toggle(StyleСlass.header.background);
-
-  //   mobile.classList.toggle(StyleСlass.mobile.open);
-  //   burger.classList.toggle('is-active')
-  // }
+  function Menu() {
+    mobile.classList.toggle(StyleСlass.mobile.open);
+    document.body.classList.toggle('disable-scroll');
+  }
 }
