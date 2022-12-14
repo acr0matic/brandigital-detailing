@@ -1,8 +1,8 @@
 /* purgecss start ignore */
 
 .swiper {
-  &--bootstrap-sm {
-    @include breakpoint($breakpoint-tablet) {
+  &--bootstrap-md {
+    @include breakpoint($breakpoint-tablet--large) {
       .swiper-wrapper {
         flex-wrap: nowrap;
       }

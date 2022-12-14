@@ -7,7 +7,13 @@ if (widget) {
 
   ['click', 'scroll'].forEach(event =>
     window.addEventListener(event, (e) => {
-      if (!widget.contains(e.target)) widget.parentNode.classList.remove('widget--open');
+      if (!widget.contains(e.target)) container.classList.remove('widget--open');
     })
   );
+
+  const pageHeight = document.body.scrollHeight - window.innerHeight;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > pageHeight - 300) container.classList.add('widget--hide');
+    else container.classList.remove('widget--hide');
+  });
 }

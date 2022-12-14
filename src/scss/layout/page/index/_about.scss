@@ -13,10 +13,18 @@
   }
 
   .row:nth-child(2) {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: -20%;
+    }
+
     margin-top: -40px;
   }
 
   .row:last-child {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: -10%;
+    }
+
     margin-top: -20%;
   }
 }

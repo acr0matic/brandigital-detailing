@@ -10,8 +10,12 @@
 
   transition: $transition ease;
 
+  &--hide {
+    right: -100px;
+  }
+
   &--open {
-    z-index: 15;
+    z-index: 150;
 
     .widget__overlay {
       opacity: 1;

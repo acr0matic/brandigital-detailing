@@ -38,7 +38,7 @@ const aboutGallery = new Swiper('.slider-gallery', {
   },
 });
 
-if (isSmallTablet) {
+if (isTablet) {
   const service = new Swiper('.slider-service', {
     slidesPerView: 1.6,
     speed: 300,

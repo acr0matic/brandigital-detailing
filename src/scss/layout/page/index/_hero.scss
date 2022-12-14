@@ -11,6 +11,15 @@
     background-size: 1140px;
   }
 
+  @include breakpoint($breakpoint-tablet--large) {
+    height: 880px;
+    max-height: initial;
+
+    background-image: url("../img/layout/page/index/hero/background_2.jpg");
+    background-position: center center;
+    background-size: 100%;
+  }
+
   position: relative;
   height: 100vh;
   max-height: 800px;
@@ -40,6 +49,10 @@
 }
 
 .hero {
+  @include breakpoint($breakpoint-tablet--large) {
+    align-items: center;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -47,6 +60,10 @@
   &__title {
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: 96px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding-top: 156px;
     }
 
     padding-top: 110px;

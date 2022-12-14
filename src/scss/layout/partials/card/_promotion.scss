@@ -1,5 +1,9 @@
 .card-promotion {
   .card__picture {
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 180px;
+    }
+
     height: 230px;
   }
 
