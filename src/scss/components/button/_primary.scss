@@ -1,4 +1,9 @@
 .button-primary {
+  @include breakpoint($breakpoint-mobile--large) {
+    padding: 15px 55px;
+    font-size: $font-size__text--regular;
+  }
+
   padding: 20px 70px;
 
   background-color: rgba($color: $palette-white, $alpha: 0.15);

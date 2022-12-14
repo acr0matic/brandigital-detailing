@@ -18,6 +18,11 @@
   }
 
   &__video {
+    @include breakpoint($breakpoint-mobile--medium) {
+      margin-top: 12px;
+      font-size: $font-size__text--small - 2px;
+    }
+
     display: flex;
     align-items: center;
 

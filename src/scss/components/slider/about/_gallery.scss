@@ -8,6 +8,14 @@
       height: 300px;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 230px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      height: 180px;
+    }
+
     height: 520px;
   }
 }

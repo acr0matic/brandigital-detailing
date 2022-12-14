@@ -5,6 +5,7 @@
     @include breakpoint($breakpoint-tablet--large) {
       .swiper-wrapper {
         flex-wrap: nowrap;
+        margin: 0;
       }
 
       .swiper-slide {
@@ -35,6 +36,10 @@
 
   &-control {
     &--arrow {
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
+
       .swiper-button {
         &-prev,
         &-next {

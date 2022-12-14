@@ -22,7 +22,14 @@
 
   @include breakpoint($breakpoint-tablet) {
     height: 100vh;
-    background-position-y: bottom
+
+    background-position-y: bottom;
+  }
+
+  @include breakpoint($breakpoint-mobile--large) {
+    background-position-x: -500px;
+    background-position-y: calc(100% + 130px);
+    background-size: 1000px;
   }
 
   position: relative;
@@ -79,6 +86,14 @@
       font-size: 54px;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      padding-top: 120px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: 40px;
+    }
+
     padding-top: 110px;
 
     color: transparent;
@@ -89,6 +104,10 @@
   }
 
   &__button {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 40px;
+    }
+
     margin: auto auto 80px;
   }
 }

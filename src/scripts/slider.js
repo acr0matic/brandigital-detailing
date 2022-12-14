@@ -1,5 +1,5 @@
 const promotion = new Swiper('.slider-promotion', {
-  slidesPerView: 2,
+  slidesPerView: 1.25,
   speed: 300,
   spaceBetween: 24,
   simulateTouch: false,
@@ -11,6 +11,12 @@ const promotion = new Swiper('.slider-promotion', {
 
   scrollbar: {
     el: '.slider-promotion .swiper-scrollbar',
+  },
+
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
   },
 });
 
@@ -40,7 +46,7 @@ const aboutGallery = new Swiper('.slider-gallery', {
 
 if (isTablet) {
   const service = new Swiper('.slider-service', {
-    slidesPerView: 1.6,
+    slidesPerView: 1.25,
     speed: 300,
     spaceBetween: 24,
     simulateTouch: false,
@@ -52,6 +58,12 @@ if (isTablet) {
 
     scrollbar: {
       el: '.slider-service .swiper-scrollbar',
+    },
+
+    breakpoints: {
+      576: {
+        slidesPerView: 1.6,
+      },
     },
   });
 }

@@ -17,12 +17,21 @@
       margin-top: -20%;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+      margin-top: 0;
+    }
+
     margin-top: -40px;
   }
 
   .row:last-child {
     @include breakpoint($breakpoint-tablet--large) {
       margin-top: -10%;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-top: 56px;
     }
 
     margin-top: -20%;

@@ -3,16 +3,14 @@
   flex-direction: column;
   height: 100%;
 
-  @media (hover: hover) {
-    &:hover {
-      .button {
-        opacity: 1;
-        visibility: visible;
-      }
+  &:hover {
+    .button {
+      opacity: 1;
+      visibility: visible;
+    }
 
-      .card__picture img {
-        filter: blur(35px);
-      }
+    .card__picture img {
+      filter: blur(35px);
     }
   }
 
@@ -39,6 +37,14 @@
   }
 
   &__button {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 90%;
+      max-width: 240px;
+
+      padding-right: 0;
+      padding-left: 0;
+    }
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,6 +56,11 @@
   }
 
   &__footer {
+    @include breakpoint($breakpoint-mobile--medium) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     display: flex;
     align-items: center;
 
