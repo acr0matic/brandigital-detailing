@@ -11,6 +11,11 @@
 }
 
 .footer {
+  @include breakpoint($breakpoint-tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   display: flex;
   align-items: center;
   justify-content: space-between;

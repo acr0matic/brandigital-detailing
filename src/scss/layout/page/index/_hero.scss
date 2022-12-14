@@ -20,6 +20,11 @@
     background-size: 100%;
   }
 
+  @include breakpoint($breakpoint-tablet) {
+    height: 100vh;
+    background-position-y: bottom
+  }
+
   position: relative;
   height: 100vh;
   max-height: 800px;
@@ -31,6 +36,10 @@
   background-repeat: no-repeat;
 
   &::after {
+    @include breakpoint($breakpoint-tablet) {
+      height: 290px;
+    }
+
     content: "";
     position: absolute;
     top: 100%;
@@ -64,6 +73,10 @@
 
     @include breakpoint($breakpoint-tablet--large) {
       padding-top: 156px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 54px;
     }
 
     padding-top: 110px;

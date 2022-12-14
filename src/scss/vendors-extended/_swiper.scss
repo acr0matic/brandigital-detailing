@@ -1,11 +1,27 @@
 /* purgecss start ignore */
 
 .swiper {
-  &--bootstrap-md {
+  &--bootstrap-lg {
     @include breakpoint($breakpoint-tablet--large) {
       .swiper-wrapper {
         flex-wrap: nowrap;
       }
+
+      .swiper-slide {
+        padding: 0;
+      }
+    }
+  }
+
+  &--overflow-lg {
+    @include breakpoint($breakpoint-tablet--large) {
+      overflow: visible;
+    }
+  }
+
+  &--overflow-sm {
+    @include breakpoint($breakpoint-mobile--large) {
+      overflow: visible;
     }
   }
 

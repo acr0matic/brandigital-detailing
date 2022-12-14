@@ -22,6 +22,10 @@
   }
 
   &__content {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 14px 0 14px 14px;
+    }
+
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -53,6 +57,11 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 12px;
+      font-size: $font-size__text--small;
+    }
+
     margin-bottom: 18px;
 
     font-weight: $weight-Regular;
@@ -72,6 +81,10 @@
   }
 
   &__text {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--small;
+    }
+
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;

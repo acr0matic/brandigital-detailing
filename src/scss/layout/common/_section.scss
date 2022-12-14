@@ -4,14 +4,26 @@
       padding-top: 120px;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      padding-top: 100px;
+    }
+
     padding-top: 150px;
   }
 
   &__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 30px;
+    }
+
     margin-bottom: 40px;
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large;
+    }
+
     margin-bottom: 15px;
 
     font-weight: $weight-Regular;
@@ -19,6 +31,10 @@
   }
 
   &__description {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--regular;
+    }
+
     color: $color-text__gray;
     font-size: $font-size__text--big;
   }
