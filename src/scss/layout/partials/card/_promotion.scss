@@ -11,6 +11,10 @@
     height: 230px;
   }
 
+  .card__title {
+    text-transform: uppercase;
+  }
+
   .card__text {
     display: -webkit-box;
     overflow: hidden;

@@ -100,4 +100,8 @@
     overflow: hidden;
     -webkit-box-orient: vertical;
   }
+
+  &__hidden {
+    display: none;
+  }
 }

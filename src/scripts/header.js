@@ -25,7 +25,7 @@ if (header) {
 
 
   const mobile = document.querySelector('.mobile-menu');
-  const mobileOverlay = document.querySelector('.mobile-menu');
+  const mobileOverlay = document.querySelector('.mobile-menu__overlay');
   const mobileNav = mobile.querySelectorAll('.nav__link');
 
   const headerBurger = header.querySelector('.hamburger');
