@@ -19,6 +19,11 @@ if (modalPromotion) {
 
       LazyLoad.resetStatus(picture)
       lazyLoadInstance.update();
+
+      action.addEventListener('click', () => {
+        // MicroModal.close('modal-promotion', modalParams);
+        // MicroModal.show('modal-callback', modalParams);
+      });
     });
   });
 }
@@ -40,6 +45,8 @@ if (modalPortfolio) {
       thumb.innerHTML = card.querySelector('.card__hidden .thumb').innerHTML;
 
       lazyLoadInstance.update();
+      porfolioGallery.update();
+      porfolioThumb.update();
     });
   });
 }

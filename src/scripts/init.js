@@ -25,9 +25,9 @@ forms.forEach(form => {
 
 MicroModal.init(modalParams);
 
-const modalTrigger = document.querySelectorAll('[data-micromodal-trigger]');
+const modalTrigger = document.querySelectorAll('[data-modal], [data-micromodal-trigger]');
 modalTrigger.forEach(trigger => trigger.addEventListener('click', () => {
-  currentModal = trigger.dataset.micromodalTrigger;
+  currentModal = trigger.dataset.modal || trigger.dataset.micromodalTrigger;
   const modal = document.getElementById(currentModal);
 
   if (modal) {
